@@ -33,7 +33,7 @@ try:
     if checksum1 == checksum2:
         print(f'{file1} and {file2} are identical, and their sha256 checksum is {checksum1}')
     else:
-        print(f'these files are not identical.')
+        print('these files are not identical.')
         print(f'the sha256 checksum of {file1} is {checksum1}')
         print(f'the sha256 checksum of {file2} is {checksum2}')
 
