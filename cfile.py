@@ -31,11 +31,13 @@ try:
 
     # Compare the two checksums to determine if the files are identical
     if checksum1 == checksum2:
-        print(f'{file1} and {file2} are identical, and their sha256 checksum is {checksum1}')
+        print(f'{file1} and {file2} are identical,', 
+              f'and their sha256 checksum is {checksum1}')
     else:
         print('these files are not identical.')
         print(f'the sha256 checksum of {file1} is {checksum1}')
         print(f'the sha256 checksum of {file2} is {checksum2}')
 
 except FileNotFoundError as nf:
-    print(f'unfortunately, "{str(nf)[38:-1]}" is invalid. please try using a file that actually exists.')
+    print(f'unfortunately, "{str(nf)[38:-1]}" is invalid.', 
+          'please try using a file that actually exists.')
